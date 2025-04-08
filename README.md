@@ -112,9 +112,3 @@ The system will generate:
 - `ensemble_results.csv`: Prediction results
 - `spectral_cluster_visual.png`: Cluster visualization
 
-
-To use this:
-1. Copy the entire content
-2. Replace placeholders (`yourusername`, year, name)
-3. Ensure your `spectral_cluster_visual.png` exists in root directory
-4. The expandable sections will work automatically on GitHub
