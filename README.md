@@ -1,4 +1,4 @@
-# 光伏潜力智能评估系统 🌞
+# 光伏潜力智能评估系统 / Solar Potential Assessment System 🌞
 
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/)
 
