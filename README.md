@@ -70,9 +70,8 @@ A machine learning system for urban rooftop area prediction and distributed phot
 ## Quick Start
 ### Installation
 ```bash
-git clone https://github.com/yourusername/rooftop-pv-estimation.git
-cd rooftop-pv-estimation
-pip install -r requirements.txt
+git clone git@github.com:Heysongsong/ml-pv-potential.git
+conda env create -f environment.yml
 ```
 
 ### Data Preparation
