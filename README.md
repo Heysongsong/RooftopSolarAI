@@ -16,13 +16,13 @@
 ## 快速开始
 ### 环境安装
 ```bash
-git clone https://github.com/yourusername/rooftop-pv-estimation.git
-cd rooftop-pv-estimation
-pip install -r requirements.txt
+git clone git@github.com:Heysongsong/ml-pv-potential.git
+conda env create -f environment.yml
 ```
 ### 准备数据
-1. 训练数据：`grid_data.csv`（需包含屋顶面积等字段）
-2. 聚类数据：`cluster_data.csv`（需包含太阳辐射等字段）
+```bash
+tar -xzvf data.tar.gz
+```
 
 ### 运行示例
 ```bash
@@ -41,12 +41,6 @@ python main.py
 ```
 
 ## 详细说明
-### 数据要求
-训练数据应包含以下字段（示例）：
-```csv
-code,flag,Lon,Lat,Rooftop_area,City,...,Dem_average
-```
-
 ### 配置修改
 在`config.py`中可调整：
 ```python
@@ -62,26 +56,6 @@ XGB_PARAMS = {
 - `ensemble_results.csv`：预测结果
 - `spectral_cluster_visual.png`：聚类可视化
 
-## 示例输出
-### 模型性能
-```
-INFO - Ensemble_test - MAE: 11.28, R²: 0.91
-```
-
-### 聚类效果
-![聚类可视化](./spectral_cluster_visual.png)
-
-## 常见问题
-**Q：如何更换自己的数据集？**  
-A：保持字段名称一致或修改`data_preprocessing.py`中的列名映射
-
-**Q：如何调整聚类数量？**  
-A：修改`clustering.py`中的`n_clusters`参数
-
-## 后续计划
-- [ ] 增加Web可视化界面
-- [ ] 支持更多聚类算法
-- [ ] 添加API接口
 </details>
 
 <!-- English Version -->
@@ -103,8 +77,9 @@ pip install -r requirements.txt
 ```
 
 ### Data Preparation
-1. Training data: `grid_data.csv` (should contain rooftop area fields)
-2. Clustering data: `cluster_data.csv` (should contain solar radiation fields)
+```bash
+tar -xzvf data.tar.gz
+```
 
 ### Run Demo
 ```bash
@@ -122,12 +97,6 @@ python main.py
 └── README.md           # Documentation
 ```
 
-## Detailed Instructions
-### Data Requirements
-Training data should include these fields (example):
-```csv
-code,flag,Lon,Lat,Rooftop_area,City,...,Dem_average
-```
 
 ### Configuration
 Modify parameters in `config.py`:
@@ -144,27 +113,7 @@ The system will generate:
 - `ensemble_results.csv`: Prediction results
 - `spectral_cluster_visual.png`: Cluster visualization
 
-## Sample Output
-### Model Performance
-```
-INFO - Ensemble_test - MAE: 11.28, R²: 0.91
-```
 
-### Cluster Visualization
-![Cluster Visualization](./spectral_cluster_visual.png)
-
-## FAQ
-**Q: How to use custom datasets?**  
-A: Either keep the same field names or modify column mapping in `data_preprocessing.py`
-
-**Q: How to adjust cluster count?**  
-A: Modify the `n_clusters` parameter in `clustering.py`
-
-## Roadmap
-- [ ] Add web visualization interface
-- [ ] Support more clustering algorithms
-- [ ] Implement API endpoints
-</details>
 
 ## License 许可
 [MIT License](LICENSE) © 2023 YourName
