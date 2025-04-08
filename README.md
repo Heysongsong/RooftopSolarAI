@@ -113,18 +113,6 @@ The system will generate:
 - `spectral_cluster_visual.png`: Cluster visualization
 
 
-
-## License
-[MIT License](LICENSE) © 2023 YourName
-```
-
-Key features of this combined version:
-1. **Bilingual Toggle**: Uses HTML `<details>` tags to create expandable sections
-2. **Consistent Structure**: Maintains identical section ordering in both languages
-3. **Shared Elements**: License and badges appear outside language sections
-4. **Visual Separation**: Clear headers mark each language version
-5. **Default Open**: English version set to open by default (change `open` attribute if needed)
-
 To use this:
 1. Copy the entire content
 2. Replace placeholders (`yourusername`, year, name)
